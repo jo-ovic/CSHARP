@@ -1,0 +1,43 @@
+public class Figura
+    {
+        private int quantidade;
+        private double tamanho;
+        public int Quantidade
+        {
+            get
+            {
+                return quantidade;
+            }
+            set
+            {
+                quantidade = value;
+            }
+        }
+        public double Tamalho
+        {
+            get
+            {
+                return tamanho;
+            }
+            set
+            {
+                tamanho = value;
+            }
+        }
+        public double Perimetro(int x, double y)
+        {
+            double perimetro;
+            Quantidade = x;
+            Tamalho = y;
+            perimetro = Quantidade * Tamalho;
+            return perimetro;
+        }
+        public double Area(double y)
+        {
+            //A formula da Área do QUADRADO é lado * lado = (lado)^2
+            double area;
+            Tamalho = y;
+            area = Math.Sqrt(Tamalho);
+            return area;
+        }
+    }
